@@ -12,12 +12,6 @@ def kovetkezo_allapotok(allapot):
     uj_allapotok = []
     kancsok = list(allapot)
 
-    # Kiürítés műveletek
-    for i in range(3):
-        uj = list(kancsok)
-        uj[i] = 0
-        uj_allapotok.append(tuple(uj))
-
     # Átöntés műveletek (i -> j)
     for i in range(3):
         for j in range(3):
@@ -72,4 +66,5 @@ def megoldas():
     print("Végállapot:", vegallapot)
 
 
-megoldas()
+if __name__ == '__main__':
+    megoldas()
